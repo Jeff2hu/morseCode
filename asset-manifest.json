@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/morseCode/static/css/main.065f149d.css",
+    "main.js": "/morseCode/static/js/main.c4628b90.js",
+    "index.html": "/morseCode/index.html",
+    "main.065f149d.css.map": "/morseCode/static/css/main.065f149d.css.map",
+    "main.c4628b90.js.map": "/morseCode/static/js/main.c4628b90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.065f149d.css",
+    "static/js/main.c4628b90.js"
+  ]
+}
