@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --primary:rgb(114, 88, 62);
+}
+
+@mixin d-flex($justify:center,$align:center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+html{
+  @include d-flex;
+  background-color:#444;
+  color:white;
+  font-family: 'Roboto Slab', serif;
+}
+
+.morseCode{
+  margin-top: 50px;
+  @include d-flex(center,flex-start);
+  letter-spacing: 1px;
+  .transition{
+    margin-right: 50px;
+    @include d-flex;
+    flex-direction: column;
+    h2{
+      margin-bottom: 30px;
+    }
+    textarea{
+      display: block;
+      margin-bottom: 30px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    &-btns{
+      width: 100%;
+      @include d-flex(space-evenly);
+      button{
+        border: none;
+        background-color: var(--primary);
+        color:#fff;
+        padding: 10px;
+        border-radius: 30px;
+        cursor:pointer;
+      }
+    }
+  }
+  .list{
+    border-left: 1px solid #fff;
+    padding-left: 50px;
+    @include d-flex;
+    flex-direction: column;
+    h2{
+      margin-bottom: 30px;
+    }
+    &-text{
+      width: 240px;
+      height: 65vh;
+      padding: 5px 20px;
+      background-color: var(--primary);
+      color:white;
+      @include d-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      border-radius: 30px;
+      li{
+        width: 30%;
+        height: 7.5%;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}

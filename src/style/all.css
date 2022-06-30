@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:rgb(114, 88, 62);
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+.morseCode {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  letter-spacing: 1px;
+}
+.morseCode .transition {
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.morseCode .transition h2 {
+  margin-bottom: 30px;
+}
+.morseCode .transition textarea {
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 18px;
+}
+.morseCode .transition-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.morseCode .transition-btns button {
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.morseCode .list {
+  border-left: 1px solid #fff;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.morseCode .list h2 {
+  margin-bottom: 30px;
+}
+.morseCode .list-text {
+  width: 240px;
+  height: 65vh;
+  padding: 5px 20px;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 30px;
+}
+.morseCode .list-text li {
+  width: 30%;
+  height: 7.5%;
+  letter-spacing: 1.5px;
+}/*# sourceMappingURL=all.css.map */
